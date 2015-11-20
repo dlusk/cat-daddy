@@ -17,11 +17,11 @@ module.exports = function(grunt) {
 			compass: {
 				files: ['sass/*.scss'],
 				tasks: ['compass:dev']
-			}, //sass
+			}, //compass
 			html: {
 				files: ['*.html']
 			} //html
 		} //watch
 	}) //initConfig
-	grunt.registerTask('default', 'watch');
+	grunt.registerTask('default', ['compass:dev', 'watch']);
 } //exports
