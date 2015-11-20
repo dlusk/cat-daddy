@@ -1,6 +1,6 @@
-drop table person;
-drop table pet;
-drop table person_pet;
+drop table if exists person;
+drop table if exists pet;
+drop table if exists person_pet;
 
 create table person (
   id integer primary_key,
@@ -55,26 +55,26 @@ select pet.id, pet.name, pet.age, pet.dead
 
 select name, age from pet where dead = 1;
 
-delete from pet where dead = 1;
+-- delete from pet where dead = 1;
+--
+-- select * from pet;
+--
+-- insert into pet values (1, "Gigantor", "Robot", 1, 0);
 
 select * from pet;
-
-insert into pet values (1, "Gigantor", "Robot", 1, 0);
-
-select * from pet;
-
-delete from pet where name = "Kali";
-select * from pet;
-insert into pet (id, name, breed, age, dead)
-  values (0, "Kali", "Cat", 7, 0);
-delete from pet where id in (
-  select pet.id
-  from pet, person, person_pet
-  where
-  person.id = person_pet.person_id and
-  pet.id = person_pet.pet_id and
-  person.first_name = "Dan"
-);
+--
+-- delete from pet where name = "Kali";
+-- select * from pet;
+-- insert into pet (id, name, breed, age, dead)
+--   values (0, "Kali", "Cat", 7, 0);
+-- delete from pet where id in (
+--   select pet.id
+--   from pet, person, person_pet
+--   where
+--   person.id = person_pet.person_id and
+--   pet.id = person_pet.pet_id and
+--   person.first_name = "Dan"
+-- );
 
 select * from pet;
 select * from person_pet;
@@ -135,5 +135,7 @@ delete from person_pet where pet_id in (
     pet.dead = 1
 );
 
+
 select * from person_pet;
+select * from person;
 select * from pet;
