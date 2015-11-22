@@ -1,0 +1,22 @@
+@mixin clearfix {
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin vcenter-parent {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin vcenter {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@mixin hcenter {
+  margin: 0 auto;
+}

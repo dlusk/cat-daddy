@@ -1,0 +1,17 @@
+
+.welcome {
+  display: table;
+  height: 100%;
+  width: 100%;
+  &__body {
+    margin-right: auto;
+    margin-left: auto;
+    @include clearfix;
+    &::after {
+      clear: both;
+    }
+  }
+  &__register {
+    display: none;
+  }
+}
