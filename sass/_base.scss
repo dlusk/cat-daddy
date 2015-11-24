@@ -1,28 +1,28 @@
 
-/* Changing Susy default global settings */
+// Changing Susy default global settings
 $susy: (
-  /* Tells Susy to use 12 columns */
+  // Tells Susy to use 12 columns
   columns: 12,
-  /* Tells Susy that the container has a max-width of 1120px */
+  // Tells Susy that the container has a max-width of 1120px
   container: 1120px,
-  /* Tells Susy to use border-box */
+  // Tells Susy to use border-box
   global-box-sizing: border-box
 );
 
-/* Makes border-box properties */
+// Makes border-box properties
 @include border-box-sizing;
 
 html {
-  background-color: rgb(73, 10, 117);
+  background-color: $main-bg;
   height: 100%;
   width: 100%;
 }
 
 body {
+  color: $pri-font;
+  font-family: 'Noto Serif', serif;
   height: 100%;
   max-height: 100%;
-  font-family: 'Noto Serif', serif;
-  color: #f6f0e6;
 }
 
 .vcenter-parent {
@@ -30,10 +30,11 @@ body {
   height: 100%;
   width: 100%;
 }
+
 .vcenter {
   display: table-cell;
-  vertical-align: middle;
   float: none;
+  vertical-align: middle;
 }
 
 .hcenter {
