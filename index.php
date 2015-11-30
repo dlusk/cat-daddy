@@ -29,8 +29,10 @@
               <form action="login.php" method="post">
                 <p><input type="text" name="username" placeholder="Username"></p>
                 <p><input type="password" name="password" placeholder="Password"></p>
-                <button class="btn__login" id="user-login" type="submit" name="login" value="login">Log In</button>
-                <div class="welcome__unregistered"><button class="btn__reg">Create Account</button></div>
+                <button class="btn btn__login" id="user-login" type="submit" name="login" value="login">Log In</button>
+                <div class="welcome__unregistered">
+                  <button class="btn btn__reg">Create Account</button>
+                </div>
               </form>
             </div>
             <div class="welcome__register" id="welcome-reg">
@@ -39,7 +41,7 @@
                 <p><input type="email" name="email" placeholder="Email"></p>
                 <p><input type="text" name="username" placeholder="Username"></p>
                 <p><input type="password" name="password" Placeholder="Password"></p>
-                <button class="btn__reg" id="user-reg" type="submit" name="register" value="register">Create Account</button>
+                <button class="btn btn__reg" id="user-reg" type="submit" name="register" value="register">Create Account</button>
               </form>
             </div>
           </div>

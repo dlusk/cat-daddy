@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -57,7 +58,7 @@ html {
 /* line 21, ../sass/_base.scss */
 body {
   color: #f6f0e6;
-  font-family: 'Noto Serif', serif;
+  font-family: "Poiret One", serif;
   height: 100%;
   max-height: 100%; }
 
@@ -79,23 +80,27 @@ body {
   text-align: center;
   width: 50%; }
 
+/* line 46, ../sass/_base.scss */
+.btn {
+  color: #161616; }
+
 /* line 2, ../sass/pages/_welcome.scss */
 .welcome {
   display: table;
   height: 100%;
   width: 100%; }
-/* line 6, ../sass/pages/_welcome.scss */
+/* line 7, ../sass/pages/_welcome.scss */
 .welcome__body {
-  margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-right: auto; }
 /* line 2, ../sass/_mixins.scss */
 .welcome__body::before {
   clear: both;
   content: '';
   display: table; }
-/* line 10, ../sass/pages/_welcome.scss */
+/* line 12, ../sass/pages/_welcome.scss */
 .welcome__body::after {
   clear: both; }
-/* line 14, ../sass/pages/_welcome.scss */
+/* line 17, ../sass/pages/_welcome.scss */
 .welcome__register {
   display: none; }

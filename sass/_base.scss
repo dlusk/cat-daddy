@@ -13,14 +13,14 @@ $susy: (
 @include border-box-sizing;
 
 html {
-  background-color: $main-bg;
+  background-color: $pri-bg-color;
   height: 100%;
   width: 100%;
 }
 
 body {
-  color: $pri-font;
-  font-family: 'Noto Serif', serif;
+  color: $pri-font-color;
+  font-family: $pri-font;
   height: 100%;
   max-height: 100%;
 }
@@ -41,4 +41,8 @@ body {
   margin: 0 auto;
   text-align: center;
   width: 50%;
+}
+
+.btn {
+  color: $pri-btn-color;
 }
