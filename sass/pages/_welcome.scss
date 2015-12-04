@@ -3,7 +3,7 @@
   display: table;
   height: 100%;
   width: 100%;
-  
+
   &__body {
     @include clearfix;
     margin-left: auto;
@@ -12,9 +12,14 @@
     &::after {
       clear: both;
     }
+  } // .welcome__body
+
+  &__logo {
+    font-size: 1.4em;
+    margin-bottom: 20px;
   }
 
   &__register {
     display: none;
   }
-}
+} // .welcome

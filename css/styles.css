@@ -59,28 +59,29 @@ html {
 body {
   color: #f6f0e6;
   font-family: "Poiret One", serif;
+  font-size: 6vh;
   height: 100%;
   max-height: 100%; }
 
-/* line 28, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 .vcenter-parent {
   display: table;
   height: 100%;
   width: 100%; }
 
-/* line 34, ../sass/_base.scss */
+/* line 35, ../sass/_base.scss */
 .vcenter {
   display: table-cell;
   float: none;
   vertical-align: middle; }
 
-/* line 40, ../sass/_base.scss */
+/* line 41, ../sass/_base.scss */
 .hcenter {
   margin: 0 auto;
   text-align: center;
   width: 50%; }
 
-/* line 46, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
 .btn {
   color: #161616; }
 
@@ -102,5 +103,9 @@ body {
 .welcome__body::after {
   clear: both; }
 /* line 17, ../sass/pages/_welcome.scss */
+.welcome__logo {
+  font-size: 1.4em;
+  margin-bottom: 20px; }
+/* line 22, ../sass/pages/_welcome.scss */
 .welcome__register {
   display: none; }
